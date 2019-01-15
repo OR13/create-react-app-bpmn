@@ -1,0 +1,206 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+
+    "cred": "https://w3id.org/credentials#",
+    "dc": "http://purl.org/dc/terms/",
+    "identity": "https://w3id.org/identity#",
+    "perm": "https://w3id.org/permissions#",
+    "ps": "https://w3id.org/payswarm#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sec": "https://w3id.org/security#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Group": "https://www.w3.org/ns/activitystreams#Group",
+
+    "scriptFormat": "https://www.w3.org/ns/activitystreams#Group",
+    "sourceRef": "https://www.w3.org/ns/activitystreams#Group",
+    "targetRef": "https://www.w3.org/ns/activitystreams#Group",
+    "isExecutable": "https://www.w3.org/ns/activitystreams#Group",
+    "bpmnElement": "https://www.w3.org/ns/activitystreams#Group",
+    "x":  "https://www.w3.org/ns/activitystreams#Group",
+    "y":  "https://www.w3.org/ns/activitystreams#Group",
+    "height":  "https://www.w3.org/ns/activitystreams#Group",
+    "width":  "https://www.w3.org/ns/activitystreams#Group",
+    "targetNamespace":  "https://www.w3.org/ns/activitystreams#Group",
+
+    "claim": { "@id": "cred:claim", "@type": "@id" },
+    "credential": { "@id": "cred:credential", "@type": "@id" },
+    "issued": { "@id": "cred:issued", "@type": "xsd:dateTime" },
+    "issuer": { "@id": "cred:issuer", "@type": "@id" },
+    "recipient": { "@id": "cred:recipient", "@type": "@id" },
+    "Credential": "cred:Credential",
+    "CryptographicKeyCredential": "cred:CryptographicKeyCredential",
+
+    "about": { "@id": "schema:about", "@type": "@id" },
+    "address": { "@id": "schema:address", "@type": "@id" },
+    "addressCountry": "schema:addressCountry",
+    "addressLocality": "schema:addressLocality",
+    "addressRegion": "schema:addressRegion",
+    "comment": "rdfs:comment",
+    "created": { "@id": "dc:created", "@type": "xsd:dateTime" },
+    "creator": { "@id": "dc:creator", "@type": "@id" },
+    "description": "schema:description",
+    "email": "schema:email",
+    "familyName": "schema:familyName",
+    "givenName": "schema:givenName",
+    "image": { "@id": "schema:image", "@type": "@id" },
+    "label": "rdfs:label",
+    "name": "schema:name",
+    "postalCode": "schema:postalCode",
+    "streetAddress": "schema:streetAddress",
+    "title": "dc:title",
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "Person": "schema:Person",
+    "PostalAddress": "schema:PostalAddress",
+    "Organization": "schema:Organization",
+
+    "identityService": { "@id": "identity:identityService", "@type": "@id" },
+    "idp": { "@id": "identity:idp", "@type": "@id" },
+    "Identity": "identity:Identity",
+
+    "paymentProcessor": "ps:processor",
+    "preferences": { "@id": "ps:preferences", "@type": "@vocab" },
+
+    "cipherAlgorithm": "sec:cipherAlgorithm",
+    "cipherData": "sec:cipherData",
+    "cipherKey": "sec:cipherKey",
+    "digestAlgorithm": "sec:digestAlgorithm",
+    "digestValue": "sec:digestValue",
+    "domain": "sec:domain",
+    "expires": { "@id": "sec:expiration", "@type": "xsd:dateTime" },
+    "initializationVector": "sec:initializationVector",
+    "member": { "@id": "schema:member", "@type": "@id" },
+    "memberOf": { "@id": "schema:memberOf", "@type": "@id" },
+    "nonce": "sec:nonce",
+    "normalizationAlgorithm": "sec:normalizationAlgorithm",
+    "owner": { "@id": "sec:owner", "@type": "@id" },
+    "password": "sec:password",
+    "privateKey": { "@id": "sec:privateKey", "@type": "@id" },
+    "privateKeyPem": "sec:privateKeyPem",
+    "publicKey": { "@id": "sec:publicKey", "@type": "@id" },
+    "publicKeyPem": "sec:publicKeyPem",
+    "publicKeyService": { "@id": "sec:publicKeyService", "@type": "@id" },
+    "revoked": { "@id": "sec:revoked", "@type": "xsd:dateTime" },
+    "signature": "sec:signature",
+    "signatureAlgorithm": "sec:signatureAlgorithm",
+    "signatureValue": "sec:signatureValue",
+    "CryptographicKey": "sec:Key",
+    "EncryptedMessage": "sec:EncryptedMessage",
+    "GraphSignature2012": "sec:GraphSignature2012",
+    "LinkedDataSignature2015": "sec:LinkedDataSignature2015",
+
+    "accessControl": { "@id": "perm:accessControl", "@type": "@id" },
+    "writePermission": { "@id": "perm:writePermission", "@type": "@id" }
+  },
+  "bpmn:definitions": {
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    "xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+    "xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+    "xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+    "id": "Definitions_04vqa02",
+    "targetNamespace": "http://bpmn.io/schema/bpmn",
+    "bpmn:process": {
+      "id": "Process_1",
+      "isExecutable": "true",
+      "bpmn:startEvent": {
+        "id": "StartEvent_0evtuoj",
+        "bpmn:outgoing": "SequenceFlow_006qw3j"
+      },
+      "bpmn:sequenceFlow": [
+        {
+          "id": "SequenceFlow_006qw3j",
+          "sourceRef": "StartEvent_0evtuoj",
+          "targetRef": "Task_0tj89l5"
+        },
+        {
+          "id": "SequenceFlow_1pizd29",
+          "sourceRef": "Task_0tj89l5",
+          "targetRef": "EndEvent_0q6qume"
+        }
+      ],
+      "bpmn:scriptTask": {
+        "id": "Task_0tj89l5",
+        "name": "GET URL",
+        "scriptFormat": "Javascript"
+      },
+      "bpmn:endEvent": {
+        "id": "EndEvent_0q6qume",
+        "bpmn:incoming": "SequenceFlow_1pizd29"
+      }
+    },
+    "bpmndi:BPMNDiagram": {
+      "id": "BPMNDiagram_1",
+      "bpmndi:BPMNPlane": {
+        "id": "BPMNPlane_1",
+        "bpmnElement": "Process_1",
+        "bpmndi:BPMNShape": [
+          {
+            "id": "StartEvent_0evtuoj_di",
+            "bpmnElement": "StartEvent_0evtuoj",
+            "dc:Bounds": {
+              "x": "159",
+              "y": "139",
+              "width": "36",
+              "height": "36"
+            }
+          },
+          {
+            "id": "EndEvent_0q6qume_di",
+            "bpmnElement": "EndEvent_0q6qume",
+            "dc:Bounds": {
+              "x": "398",
+              "y": "139",
+              "width": "36",
+              "height": "36"
+            }
+          },
+          {
+            "id": "ScriptTask_16q0i13_di",
+            "bpmnElement": "Task_0tj89l5",
+            "dc:Bounds": {
+              "x": "239",
+              "y": "117",
+              "width": "100",
+              "height": "80"
+            }
+          }
+        ],
+        "bpmndi:BPMNEdge": [
+          {
+            "id": "SequenceFlow_006qw3j_di",
+            "bpmnElement": "SequenceFlow_006qw3j",
+            "di:waypoint": [
+              {
+                "x": "195",
+                "y": "157"
+              },
+              {
+                "x": "239",
+                "y": "157"
+              }
+            ]
+          },
+          {
+            "id": "SequenceFlow_1pizd29_di",
+            "bpmnElement": "SequenceFlow_1pizd29",
+            "di:waypoint": [
+              {
+                "x": "339",
+                "y": "157"
+              },
+              {
+                "x": "398",
+                "y": "157"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
